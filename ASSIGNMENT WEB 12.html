@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Roll No.</th>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Aman</td>
+        <td id="mark1">85</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Riya</td>
+        <td id="mark2">92</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="2"><strong>Average Marks</strong></td>
+        <td id="avg-marks"></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script>
+    let m1 = Number(document.getElementById("mark1").textContent);
+    let m2 = Number(document.getElementById("mark2").textContent);
+    
+    document.getElementById("avg-marks").textContent = (m1 + m2) / 2;
+  </script>
+
+</body>
+</html>

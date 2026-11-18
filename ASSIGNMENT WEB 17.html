@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form Validation</title>
+</head>
+<body>
+
+    
+    <h2><font color="#2E6B3E">Output</font></h2>
+    
+    
+    <table border="1" cellpadding="25" cellspacing="0" bordercolor="#7FA786" width="600">
+        <tr>
+            <td>
+                
+                <form action="submit.php" method="POST">
+                    
+                                    <p>
+                        <input type="text" placeholder="Full name" required>
+                    </p>
+
+                
+                    <p>
+                        <input type="email" placeholder="you@college.edu" required>
+                    </p>
+    <p>
+                        <input type="tel" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+                    </p>
+
+
+                    <p>
+                        <input type="password" placeholder="Min 6 characters" minlength="6" required>
+                    </p>
+
+                    <p>
+                        <input type="number" value="17" max="30" required size="5">
+                    </p>
+
+<p>
+                        <input type="submit" value="Register">
+                    </p>
+                    
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
